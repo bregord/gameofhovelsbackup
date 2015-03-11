@@ -12,6 +12,8 @@
 @class Map;
 @class GamePlayer;
 
+
+
 @interface GameEngine : SPSprite
 {
     BOOL _touching;

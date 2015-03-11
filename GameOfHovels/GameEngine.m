@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 CivetAtelier. All rights reserved.
 //
 
+//Importing necessary functions and classes
+
 #import "GameEngine.h"
 #import "Tile.h"
 #import "Map.h"
@@ -34,8 +36,8 @@
     
     GamePlayer* _currentPlayer;
     
-    
     NSMutableArray* _players;
+    
     SPJuggler* _animationJuggler;
 }
 
@@ -60,8 +62,14 @@
     //init Players
     //this will actually happen outside Game Engine
     GamePlayer* player1 = [[GamePlayer alloc] initWithString:@"player1" color:0xfa3211];
-    _players = [NSMutableArray array];
+    GamePlayer* player2 = [[GamePlayer alloc] initWithString:@"player2" color:0xf3afa];
+    
+    //Mapping from player numbers to colors
+    
+    
+    _players = [NSMutableArray array]; //thisi s an array of players.
     [_players addObject:player1];
+    [_players addObject:player2];
     
     _currentPlayer = player1;
     
@@ -90,11 +98,6 @@
     
     
 
-
-    
-    
-    
-    
     //event Listeners
     [self addEventListener:@selector(tileTouched:) atObject:self forType:EVENT_TYPE_TILE_TOUCHED];
     [self addEventListener:@selector(actionMenuAction:) atObject:self forType:EVENT_TYPE_ACTION_MENU_ACTION];
@@ -129,7 +132,7 @@
 {
     _currentPlayer = player;
     [_map updateHud];
-    _map.currentPlayer = _currentPlayer;
+    _map.currentPlayer = _currentPlayer; //Don't think trees grow after every players turn.
     [_map treeGrowthPhase];
     
     //player can now make inputs again
@@ -153,18 +156,23 @@
 {
     NSLog(@"Action Menu Action");
     Tile* tile = event.tile;
-    Tile* destTile = tile;
+    //Tile* destTile = tile;
 
     switch (event.aType) {
         case UPGRADEVILLAGE:
         {
-            [_map upgradeVillageWithTile:tile];
+            [_map upgradeVillageWithTile:tile]; //calling the object _map 's upggradeVillageWithTile with tile as input
             
             break;
         }
         case BUYUNIT:
         {
             _selectedTile = tile;
+            //this is where we will call the buy unit method
+
+            //[object buyUnitFromTile villageTile: unitTile: ]
+            //BUYUNIT
+            
             break;
         }
         case BUILDMEADOW:
@@ -174,7 +182,8 @@
         }
         case BUILDROAD:
         {
-            
+            //Call something here. Basically, replace the tile with one that is a road and has the brown tile
+            [_map buildRoad:tile];
             break;
         }
         default:

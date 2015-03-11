@@ -16,15 +16,14 @@
 
 @synthesize woodPile = _woodPile;
 @synthesize goldPile = _goldPile;
-
 @synthesize color = _color;
+
 
 
 - (id)initWithString:(NSString *)name color:(int)color
 {
     _woodPile = 40;
-    _goldPile = 36;
-    
+    _goldPile = 36;    
     _color = color;
     
     

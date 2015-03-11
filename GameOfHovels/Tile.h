@@ -20,6 +20,7 @@
 
 }
 
+@property (nonatomic) BOOL initialized;
 @property (nonatomic, readonly) SPImage* baseImage;
 @property (nonatomic) Unit* unit;
 @property (nonatomic) int color;
@@ -29,6 +30,7 @@
 - (id)initWithPosition: (SPPoint*)position structure: (enum StructureType)sType;
 - (void)setNeighbour:(int)tileNeighbour tile: (Tile*)tile;
 - (Tile*)getNeighbour:(int)tileNeighbour;
+-(int) getColor;
 - (NSMutableArray*)getNeighbours;
 
 - (void)addStructure:(enum StructureType)sType;

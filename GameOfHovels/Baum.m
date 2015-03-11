@@ -8,6 +8,7 @@
 
 #import "Baum.h"
 #import "SparrowHelper.h"
+#import "Media.h"
 
 
 @implementation Baum {
@@ -25,9 +26,13 @@
         //We have to check if a tree has just grown this turn
         _newlyGrown = true;
         
-        SPTexture* baseTexture = [SPTexture textureWithContentsOfFile:@"baum.png"];
+        //SPTexture* baseTexture = [SPTexture textureWithContentsOfFile:@"baum.png"];
+        //SPImage* baseImage = [SPImage imageWithTexture:baseTexture];
+        
+        SPTexture* baseTexture = [Media atlasTexture:@"treeGreen_low.png"];
         SPImage* baseImage = [SPImage imageWithTexture:baseTexture];
-        baseImage.scale = 0.3;
+        
+        baseImage.scale = 0.4;
         [self addChild:baseImage];
         
         
@@ -38,6 +43,4 @@
     return self;
     
 }
-
-
 @end

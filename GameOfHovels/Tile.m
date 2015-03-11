@@ -12,8 +12,10 @@
 
 #import "Structure.h"
 #import "Grass.h"
+#import "Sea.h"
 #import "Baum.h"
 #import "Meadow.h"
+#import "Road.h"
 
 #import "Hovel.h"
 #import "Town.h"
@@ -43,6 +45,7 @@
 
 }
 
+@synthesize initialized; //If it has been originally initialized with the colour.
 @synthesize baseImage = _baseImage;
 @synthesize unit = _unit;
 @synthesize color = _color;
@@ -61,6 +64,8 @@
         _village = nil;
         _isVillage = false;
         
+        initialized = NO;
+        
 
         
         _structuresSprite = [SPSprite sprite];
@@ -70,7 +75,8 @@
         
         //Tile needs some image to bw touched so we give it an 'empty' Tile
         //Right now this is a grass but eventually it will be white
-        SPTexture* tileTexture = [Media atlasTexture:@"tileGrass_tile.png"];
+        //SPTexture* tileTexture = [Media atlasTexture:@"tileGrass_tile.png"];
+        SPTexture* tileTexture = [Media atlasTexture:@"tileSnow_tile.png"];
         _tileLayer = [SPImage imageWithTexture:tileTexture];
         _tileLayer.alpha = 0.2;
         [SparrowHelper centerPivot:_tileLayer];
@@ -88,14 +94,6 @@
         self.x = position.x;
         self.y = position.y;
         
-
-
-
-
-
-        
-        
-
         
         [self addEventListener:@selector(onTouch:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
         
@@ -160,6 +158,18 @@
             break;
         }
             
+        case ROAD: {
+            Road* r= [[Road alloc] initWithTile:self];
+            [_structuresSprite addChild:r];
+            break;
+        }
+            
+        case SEA: {
+            Sea* s= [[Sea alloc] initWithTile:self];
+            [_structuresSprite addChild:s];
+            break;
+        }
+            
         default:
             break;
     }
@@ -197,6 +207,13 @@
 {
     return _neighboursArray;
 }
+
+-(int) getColor
+{
+    return _color;
+    
+}
+
 
 - (void)onTouch:(SPTouchEvent*)event
 {
@@ -295,6 +312,7 @@
 - (void)setColor:(int)color
 {
     _tileLayer.color = color;
+    _color = color;
 }
 
 - (void)selectTile

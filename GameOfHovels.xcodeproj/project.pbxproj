@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C61FFF471AA3D3630051088A /* Sparrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61FFF461AA3D3630051088A /* Sparrow.framework */; };
+		C673EE041AB00DC500257F68 /* DKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C673EE011AB00DC500257F68 /* DKQueue.m */; };
+		C673EE051AB00DC500257F68 /* DKStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C673EE031AB00DC500257F68 /* DKStack.m */; };
+		C69E27D81AAE1B5C0031932F /* Road.m in Sources */ = {isa = PBXBuildFile; fileRef = C69E27D71AAE1B5C0031932F /* Road.m */; };
+		C69E27DC1AAE80B20031932F /* Sea.m in Sources */ = {isa = PBXBuildFile; fileRef = C69E27DB1AAE80B20031932F /* Sea.m */; };
 		F38065C01A96441B009D3C56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F38065BF1A96441B009D3C56 /* main.m */; };
 		F38065C31A96441B009D3C56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F38065C21A96441B009D3C56 /* AppDelegate.m */; };
 		F38065C61A96441B009D3C56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38065C51A96441B009D3C56 /* ViewController.m */; };
@@ -14,7 +19,6 @@
 		F38065CB1A96441B009D3C56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F38065CA1A96441B009D3C56 /* Images.xcassets */; };
 		F38065CE1A96441B009D3C56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38065CC1A96441B009D3C56 /* LaunchScreen.xib */; };
 		F38065DA1A96441B009D3C56 /* GameOfHovelsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F38065D91A96441B009D3C56 /* GameOfHovelsTests.m */; };
-		F38065E41A96447A009D3C56 /* Sparrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38065E31A96447A009D3C56 /* Sparrow.framework */; };
 		F38065E61A9644B5009D3C56 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38065E51A9644B5009D3C56 /* AudioToolbox.framework */; };
 		F38065E81A9644BC009D3C56 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38065E71A9644BC009D3C56 /* AVFoundation.framework */; };
 		F38065EA1A9644C4009D3C56 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38065E91A9644C4009D3C56 /* GLKit.framework */; };
@@ -74,6 +78,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C61FFF461AA3D3630051088A /* Sparrow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparrow.framework; path = "../../../../Downloads/Sparrow-Framework-v2.1/sparrow/bin/Sparrow.framework"; sourceTree = "<group>"; };
+		C673EE001AB00DC500257F68 /* DKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DKQueue.h; path = "../../../../Downloads/Objective-C-Stack---Queue-master/DKQueue.h"; sourceTree = "<group>"; };
+		C673EE011AB00DC500257F68 /* DKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DKQueue.m; path = "../../../../Downloads/Objective-C-Stack---Queue-master/DKQueue.m"; sourceTree = "<group>"; };
+		C673EE021AB00DC500257F68 /* DKStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DKStack.h; path = "../../../../Downloads/Objective-C-Stack---Queue-master/DKStack.h"; sourceTree = "<group>"; };
+		C673EE031AB00DC500257F68 /* DKStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DKStack.m; path = "../../../../Downloads/Objective-C-Stack---Queue-master/DKStack.m"; sourceTree = "<group>"; };
+		C69E27D71AAE1B5C0031932F /* Road.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Road.m; sourceTree = "<group>"; };
+		C69E27D91AAE1B6B0031932F /* Road.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Road.h; sourceTree = "<group>"; };
+		C69E27DA1AAE80A40031932F /* Sea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sea.h; sourceTree = "<group>"; };
+		C69E27DB1AAE80B20031932F /* Sea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sea.m; sourceTree = "<group>"; };
 		F38065BA1A96441B009D3C56 /* GameOfHovels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfHovels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38065BE1A96441B009D3C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F38065BF1A96441B009D3C56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,7 +100,6 @@
 		F38065D31A96441B009D3C56 /* GameOfHovelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfHovelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38065D81A96441B009D3C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F38065D91A96441B009D3C56 /* GameOfHovelsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameOfHovelsTests.m; sourceTree = "<group>"; };
-		F38065E31A96447A009D3C56 /* Sparrow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparrow.framework; path = "../../../../../Programming/Frameworks/Sparrow-Framework-v2.1/sparrow/bin/Sparrow.framework"; sourceTree = "<group>"; };
 		F38065E51A9644B5009D3C56 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F38065E71A9644BC009D3C56 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F38065E91A9644C4009D3C56 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -95,7 +107,7 @@
 		F38065ED1A9644D3009D3C56 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		F38065EF1A9644D9009D3C56 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F38065F11A9644E9009D3C56 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		F38065F41A9646BF009D3C56 /* GameOfHovels-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameOfHovels-Prefix.pch"; sourceTree = "<group>"; };
+		F38065F41A9646BF009D3C56 /* GameOfHovels-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GameOfHovels-Prefix.pch"; path = "/Users/brendan/Development/XCodeFrameworks/Sparrow-Framework/sparrow/src/../../../../GameOfHovels/GameOfHovels/GameOfHovels/GameOfHovels-Prefix.pch"; sourceTree = "<absolute>"; };
 		F38065F81A9649AF009D3C56 /* GameEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameEngine.h; sourceTree = "<group>"; };
 		F38065F91A9649CA009D3C56 /* GameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEngine.m; sourceTree = "<group>"; };
 		F38065FC1A964C1A009D3C56 /* BasicSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicSprite.h; sourceTree = "<group>"; };
@@ -166,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61FFF471AA3D3630051088A /* Sparrow.framework in Frameworks */,
 				F380666F1A966DE4009D3C56 /* GameKit.framework in Frameworks */,
 				F38065F21A9644E9009D3C56 /* libz.dylib in Frameworks */,
 				F38065F01A9644D9009D3C56 /* QuartzCore.framework in Frameworks */,
@@ -174,7 +187,6 @@
 				F38065EA1A9644C4009D3C56 /* GLKit.framework in Frameworks */,
 				F38065E81A9644BC009D3C56 /* AVFoundation.framework in Frameworks */,
 				F38065E61A9644B5009D3C56 /* AudioToolbox.framework in Frameworks */,
-				F38065E41A96447A009D3C56 /* Sparrow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +271,7 @@
 		F38065F31A964535009D3C56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C61FFF461AA3D3630051088A /* Sparrow.framework */,
 				F380666E1A966DE4009D3C56 /* GameKit.framework */,
 				F38065F11A9644E9009D3C56 /* libz.dylib */,
 				F38065EF1A9644D9009D3C56 /* QuartzCore.framework */,
@@ -267,7 +280,6 @@
 				F38065E91A9644C4009D3C56 /* GLKit.framework */,
 				F38065E71A9644BC009D3C56 /* AVFoundation.framework */,
 				F38065E51A9644B5009D3C56 /* AudioToolbox.framework */,
-				F38065E31A96447A009D3C56 /* Sparrow.framework */,
 			);
 			name = Frameworks;
 			path = GameOfHovels;
@@ -334,6 +346,10 @@
 				F38066211A964C7E009D3C56 /* Baum.m */,
 				F38066221A964C7E009D3C56 /* Meadow.h */,
 				F38066231A964C7E009D3C56 /* Meadow.m */,
+				C69E27D71AAE1B5C0031932F /* Road.m */,
+				C69E27D91AAE1B6B0031932F /* Road.h */,
+				C69E27DA1AAE80A40031932F /* Sea.h */,
+				C69E27DB1AAE80B20031932F /* Sea.m */,
 			);
 			name = Structures;
 			sourceTree = "<group>";
@@ -508,6 +524,10 @@
 		F38066651A96515E009D3C56 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C673EE001AB00DC500257F68 /* DKQueue.h */,
+				C673EE011AB00DC500257F68 /* DKQueue.m */,
+				C673EE021AB00DC500257F68 /* DKStack.h */,
+				C673EE031AB00DC500257F68 /* DKStack.m */,
 				F38065FC1A964C1A009D3C56 /* BasicSprite.h */,
 				F38065FD1A964C1A009D3C56 /* BasicSprite.m */,
 			);
@@ -637,6 +657,7 @@
 				F380661B1A964C69009D3C56 /* Town.m in Sources */,
 				F380661A1A964C69009D3C56 /* Hovel.m in Sources */,
 				F380660F1A964C5F009D3C56 /* Unit.m in Sources */,
+				C69E27D81AAE1B5C0031932F /* Road.m in Sources */,
 				F38066631A9650F9009D3C56 /* GameEngine+iOSTouchEvents.m in Sources */,
 				F38065C61A96441B009D3C56 /* ViewController.m in Sources */,
 				F380661C1A964C69009D3C56 /* Fort.m in Sources */,
@@ -657,8 +678,11 @@
 				F38066241A964C7E009D3C56 /* Structure.m in Sources */,
 				F380660A1A964C53009D3C56 /* Tile.m in Sources */,
 				F380666D1A966399009D3C56 /* Hud.m in Sources */,
+				C673EE041AB00DC500257F68 /* DKQueue.m in Sources */,
+				C69E27DC1AAE80B20031932F /* Sea.m in Sources */,
 				F380662B1A964CD7009D3C56 /* SparrowHelper.m in Sources */,
 				F3CC71E01A992CC200E40479 /* ActionMenuEvent.m in Sources */,
+				C673EE051AB00DC500257F68 /* DKStack.m in Sources */,
 				F38066101A964C5F009D3C56 /* Ritter.m in Sources */,
 				F38066721A967C8F009D3C56 /* GHEvent.m in Sources */,
 			);
@@ -783,38 +807,56 @@
 		F38065DE1A96441B009D3C56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
+					"${SPARROW_SRC}/**",
 					"$(inherited)",
-					"/Users/Kayhan/Filing-2015/Programming/Frameworks/Sparrow-Framework-v2.1/sparrow/bin",
+					"/Users/brendan/Downloads/Sparrow-Framework-v2.1/sparrow/bin",
 				);
 				GCC_PREFIX_HEADER = "GameOfHovels/GameOfHovels-Prefix.pch";
 				INFOPLIST_FILE = GameOfHovels/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include ${SPARROW_SRC}/**";
 			};
 			name = Debug;
 		};
 		F38065DF1A96441B009D3C56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
+					"${SPARROW_SRC}/**",
 					"$(inherited)",
-					"/Users/Kayhan/Filing-2015/Programming/Frameworks/Sparrow-Framework-v2.1/sparrow/bin",
+					"/Users/brendan/Downloads/Sparrow-Framework-v2.1/sparrow/bin",
 				);
 				GCC_PREFIX_HEADER = "GameOfHovels/GameOfHovels-Prefix.pch";
 				INFOPLIST_FILE = GameOfHovels/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include ${SPARROW_SRC}/**";
 			};
 			name = Release;
 		};
@@ -831,6 +873,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = GameOfHovelsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfHovels.app/GameOfHovels";
@@ -846,6 +889,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = GameOfHovelsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfHovels.app/GameOfHovels";

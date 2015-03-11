@@ -1,32 +1,30 @@
 //
-//  Grass.m
+//  Sea.m
 //  GameOfHovels
 //
-//  Created by Kayhan Feroze Qaiser on 19/02/2015.
+//  Created by Brendan
 //  Copyright (c) 2015 CivetAtelier. All rights reserved.
 //
 
-#import "Grass.h"
+#import "Sea.h"
 #import "SparrowHelper.h"
 #import "Media.h"
 
-@implementation Grass {
+@implementation Sea {
     
 }
 
 -(id)initWithTile:(Tile *)tile
 {
     
-    if (self=[super initWithStructureType:GRASS]) {
+    if (self=[super initWithStructureType:SEA]) {
         //custom code here
-    
-       
-        //SPTexture* tileTexture = [Media atlasTexture:@"tileGrass_tile.png"];
-        SPTexture* tileTexture = [Media atlasTexture:@"tileSnow_tile.png"];
         
+        
+        SPTexture* tileTexture = [Media atlasTexture:@"tileWater_tile.png"];
         SPImage* image = [SPImage imageWithTexture:tileTexture];
         [self addChild:image];
-
+        
         
         [SparrowHelper centerPivot:self];
         

@@ -10,6 +10,7 @@
 #import "Meadow.h"
 #import "SparrowHelper.h"
 #import "Tile.h"
+#import "Media.h"
 
 
 @implementation Meadow {
@@ -22,10 +23,14 @@
     if (self=[super initWithStructureType:MEADOW]) {
         //custom code here
         
+       // SPTexture* baseTexture = [SPTexture textureWithContentsOfFile:@"meadow.png"];
+        //SPImage* baseImage = [SPImage imageWithTexture:baseTexture];
         
-        SPTexture* baseTexture = [SPTexture textureWithContentsOfFile:@"meadow.png"];
+        SPTexture* baseTexture = [Media atlasTexture:@"tileGrass_tile.png"];
         SPImage* baseImage = [SPImage imageWithTexture:baseTexture];
-        baseImage.scale = 0.18;
+        
+        
+        //baseImage.scale = 0.18;
         
         [self addChild:baseImage];
 

@@ -16,6 +16,8 @@
 @interface Map : BasicSprite {
     
     
+    enum playerColours {NEUTRAL = 0 , PLAYER1=0x040cdc, PLAYER2=0xdc0404};
+
 }
 
 
@@ -38,6 +40,7 @@
 
 - (void)chopTree:(Tile*)tile;
 - (void)buildMeadow:(Tile*)tile;
+- (void)buildRoad:(Tile*)tile;
 
 - (void)updateHud;
 
